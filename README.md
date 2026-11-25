@@ -83,7 +83,7 @@ agentworks-starter/
 ### 第 1 步：初始化你的 AgentWorks 工作区
 
 ```bash
-git clone https://github.com/<your-username>/agentworks-starter.git
+git clone https://github.com/tomfocker/agentworks-starter.git
 cd agentworks-starter
 
 # 在目标路径生成全新工作区（自动 git init 并安装 pre-commit 门禁钩子）
