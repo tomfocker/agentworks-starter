@@ -1,0 +1,16 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  // 全局（用户级）规则同步配置：只同步 rules，Skills 交由 Skills Manager 专管
+  // 可按实际安装的客户端增删 targets（如 claudecode, codexcli, antigravity-ide, zcode, cursor, opencode 等）
+  "global": true,
+  "targets": [
+    "claudecode",
+    "codexcli",
+    "antigravity-ide"
+  ],
+  "features": [
+    "rules"
+  ],
+  "delete": false,
+  "verbose": true
+}

@@ -1,0 +1,76 @@
+# AgentWorks：只追踪文档、脚本、交接记录。大文件和凭据一律排除。
+
+# ---- 凭据（安全底线，即使放错位置也不进 git）
+.secrets/
+*cookie*
+*Cookie*
+*.env
+.env.*
+*token*.txt
+*.pem
+*.key
+*credentials*
+browser-profile/
+chrome-profile/
+*.db
+*.sqlite
+
+# ---- 约定的大文件 / 临时目录（保留 tmp 里的轻量脚本）
+**/tmp/**
+!**/tmp/**/
+!**/tmp/**/*.py
+!**/tmp/**/*.js
+!**/tmp/**/*.mjs
+!**/tmp/**/*.ps1
+!**/tmp/**/*.sh
+assets/
+video/
+logs/
+node_modules/
+__pycache__/
+.venv/
+
+# ---- 媒体、字体与二进制产物
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.psd
+*.tif
+*.tiff
+*.zip
+*.7z
+*.rar
+*.exe
+*.dll
+*.pyc
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.log
+
+# ---- Office / PDF 成品
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pdf
+
+# ---- 多 Agent worktree 目录
+_wt/
+
+# ---- 代码开发：自带 git 的独立仓库在下方逐行排除
+# 代码开发/示例-独立仓库/

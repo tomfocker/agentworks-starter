@@ -1,0 +1,4 @@
+#!/bin/sh
+# AgentWorks pre-commit hook: fast lint on staged files (blocks credentials, hardcoded keys, >100MB files)
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+node "$REPO_ROOT/_tools/lint.mjs" --fast --staged
